@@ -87,7 +87,7 @@ class InputButton extends StatelessWidget {
       case InputType.clear:
         return _getTextSymbol('C');
       case InputType.delete:
-        return _getIconSymbol(FontAwesomeIcons.deleteLeft);
+        return _getTextSymbol('Delete');
       case InputType.percent:
         return _getIconSymbol(FontAwesomeIcons.percent);
       default:

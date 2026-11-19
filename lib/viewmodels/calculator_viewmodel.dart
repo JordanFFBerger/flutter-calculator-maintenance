@@ -125,6 +125,10 @@ class CalculatorViewModel extends ChangeNotifier {
   }
 
   void _onPressDelete() {
+    if (_inputExpression.isEmpty) {
+      return;
+    }
+
     _inputExpression =
         _inputExpression.substring(0, _inputExpression.length - 1);
     result = 0;
